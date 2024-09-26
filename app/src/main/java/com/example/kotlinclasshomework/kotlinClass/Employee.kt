@@ -39,4 +39,14 @@ class Teamlead : Employee() {
     }
 }
 
+class Senior : Employee() {
+    override fun haveLunch() {
+    super.haveLunch()
+    println("и вообще у него весь день обед")
+    }
+    override fun goHome() {
+    println("Пообедали можно и домой. О 15:00, даже позже чем вчера.")
+    }
+
+}
 // TODO здесь можно создать новый класс, который будет наследоваться от класса Employee. Не забудьте переопределить методы haveLunch() и goHome()
